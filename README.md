@@ -8,7 +8,7 @@ Several projects to help Jeremy and analytics team using RStudio:
 
 
 ## Linear Regression to Predict MPG
-![]("images/summary_output.PNG)
+![](images/summary_output.PNG)
 - Judging from the p values that are much lower than the significance level of 0.05, we can safely say that the (Intercept), vehicle length, and ground clearance provide a non-random amount of variance to the mpg values in the dataset.
 - The slope of the linear model connot be considered to be zero. Our formula for predicting mpg according to the summary output is:
 	**mpg = -104 + 6.267*vehicle_length + 1.245e-03*vehicle_weight + 6.877e-02*spoiler_angle + 3.546*ground_clearance -3.411*AWD**
@@ -19,6 +19,7 @@ Several projects to help Jeremy and analytics team using RStudio:
 ## Summary Statistics on Suspension Coils
 ### All Lots Statistics
 ![](images/total_summary.PNG)
+Statistics summary of our population data.
 ### Individual Lot Statistics
 ![](images/lot_summary.PNG)
 
@@ -35,14 +36,17 @@ Testing the sample size of 50 across all the lots to the population of 150, we f
 
 ### T-Test Lot 1
 ![](images/lot1.PNG)
+
 Testing the sample size of 30 within Lot 1, we found a p-value of 7.875e-06. Comparing to the significance level of 0.05, it is safe to say the PSI for Lot 1 are statiscally different to the population mean.
 
 ### T-Test Lot 2
 ![](images/lot2.PNG)
+
 Testing the sample size of 30 within Lot 2, we found a p-value of 0.0009114. Comparing to the significance level of 0.05, it is safe to say the PSI for Lot 2 are statiscally different to the population mean.
 
 ### T-Test Lot 3
 ![](images/lot3.PNG)
+
 Testing the sample size of 30 within Lot 3, we found a p-value of 0.7236. Comparing to the significance level of 0.05, it is safe to say the PSI for Lot 3 are statiscally similar to the population mean.
 
 
