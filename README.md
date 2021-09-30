@@ -32,6 +32,7 @@ The design sepcifications state that the variance of the suspension coils must n
 ## T-Tests on Suspension Coils
 ### T-Test for all Lots
 ![](images/all_sample_t_test.PNG)
+
 Testing the sample size of 50 across all the lots to the population of 150, we found a p-value of 0.9645. Comparing to the significance level of 0.05, it is safe to say the PSI across all lots are statiscally similar to the population mean.
 
 ### T-Test Lot 1
