@@ -16,4 +16,18 @@ lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 
 
 # Deliverable 3: T-Tests on Suspension Coils
+sample_table <- suspension_coil %>% sample_n(50) # randomly select 50 data points 
 
+## T.test - determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds/in^2
+t.test(sample_table$PSI,mu=mean(suspension_coil$PSI)) # test the 50 random samples to population mean
+
+## determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds/in^2
+### Lot 1 
+lot1_sample <- suspension_coil %>% subset(Manufacturing_Lot=="Lot1") #create table for lot1 samples
+t.test((lot1_sample %>% sample_n(30))$PSI,mu=mean(suspension_coil$PSI)) #test 30 Lot 1 samples to population mean
+### Lot 2
+lot2_sample <- suspension_coil %>% subset(Manufacturing_Lot=="Lot2") #create table for lot2 samples
+t.test((lot2_sample %>% sample_n(30))$PSI,mu=mean(suspension_coil$PSI)) #test 30 Lot 2 samples to population mean
+### Lot 3
+lot3_sample <- suspension_coil %>% subset(Manufacturing_Lot=="Lot3") #create table for lot3 samples
+t.test((lot3_sample %>% sample_n(30))$PSI,mu=mean(suspension_coil$PSI)) #test 30 Lot 3 samples to population mean
